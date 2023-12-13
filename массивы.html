@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="icon" href="https://aomra.co.uk/img/favicon.ico" type="image/x-icon">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Массивы</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="main.js" defer></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="content">
+				<div class="matrix_setup">
+					<div class="title">Генератор матриц</div>
+					<div class="matrix_setup__control">
+						<div class="control__body">
+							<input type="tel" class="input_control" id="columns" placeholder="| |" maxlength="4" pattern="\d [0-9]" title="Столбцы">
+							<div class="separator_x">X</div>
+							<input type="tel" class="input_control" id="rows" placeholder="_" maxlength="4" pattern="\d [0-9]" title="Строки">
+						</div>
+						<div class="control__tools">
+							<button id="clear" data-visible="false">Очистить</button>
+						</div>
+					</div>
+					<button class="btn" id="generate">Сгенерировать</button>
+					<div id="tooltip" data-visible="false">-</div>
+				</div>
+				<div id="matrix_result" data-visible="false">
+					<div id="matrix_result__cont"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
